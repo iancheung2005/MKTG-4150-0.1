@@ -1,14 +1,21 @@
 # BootPulse
 
-React / Express / tRPC / Drizzle starter, adapted from the Sandbox web-db-user template.
+BootPulse is a desktop-first cash-flow, runway, and scenario-planning dashboard for founders and bootstrapped teams.
+
+This repository contains the React / Express / tRPC / Drizzle starter adapted for the BootPulse MVP. The current delivery includes the landing page, pricing, auth and onboarding surfaces, workspace shell, runway dashboard, editable cash-flow table, scenario comparison, decisions, milestones, notes, billing, and settings views. Demo data is fictional.
+
+## Development
 
 - `pnpm dev`: development server; honors `PORT` (default 3000).
 - `pnpm build` / `pnpm start`: build and serve `dist/index.js` and `dist/public/`.
 - `pnpm db:migrate`: apply checked-in migrations. `pnpm db:push`: generate and apply new schema changes.
 - `pnpm check` / `pnpm test`: types and application tests.
 
-Start with the Webdev skill's default-template guide. Platform login, storage, payments and service contracts live in its shared references; read the relevant capability before extending its helper.
+The project preserves the Webdev starter runtime. Platform login, storage, payments, and service contracts live in the shared capability references. Private keys stay server-side, and managed `/manus-storage/` assets remain platform-owned.
 
-`server/_core/publicConfig.ts` exposes only named public runtime values. Private keys stay server-side. The platform serves managed `/manus-storage/` assets; the application does not register a second proxy.
+## Project documents
 
-Platform configuration is readable and editable through `webdev.config`. Default settings are initial values, not enforced constraints. The agent may modify the files, commands and configuration or follow the flexible guide for another stack.
+- `docs/PRD.md.pdf` — BootPulse product requirements document.
+- `docs/tasklist.md.pdf` — Phase 1 MVP execution plan and verification gates.
+- `plan.md` — implementation and design plan for this delivery.
+- `TODO.md` — outcome-oriented MVP checklist.
