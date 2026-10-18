@@ -4,6 +4,10 @@ BootPulse is a desktop-first cash-flow, runway, and scenario-planning dashboard 
 
 This repository contains the React / Express / tRPC / Drizzle starter adapted for the BootPulse MVP. The current delivery includes the landing page, pricing, auth and onboarding surfaces, workspace shell, runway dashboard, editable cash-flow table, scenario comparison, decisions, milestones, notes, billing, and settings views. Demo data is fictional.
 
+## Live demo
+
+The published BootPulse app is available at [bootpulse-8pdjnpyk.manus.space](https://bootpulse-8pdjnpyk.manus.space).
+
 ## Development
 
 - `pnpm dev`: development server; honors `PORT` (default 3000).
